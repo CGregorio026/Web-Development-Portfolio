@@ -98,14 +98,33 @@ textarea {
    ========================================================================== */
 
 /* Formatting Styles */
+
+/* * {
+  border: 1px solid red;
+} */
+
 html {
   background-color: rgb(240, 240, 240);
 }
 
 
+
+body>aside {
+  width: 25%;
+  float: left;
+  margin: 0 1.5% 0 0;
+}
+
+body>article {
+  float: right;
+  width: 60%;
+  margin: 10px;
+}
+
 /* Navigation Styles */
 
 nav {
+  float: right;
   display: table;
   width: 90%;
   font-family: 'Courier New', Courier, monospace;
