@@ -108,15 +108,20 @@ html {
 }
 
 
+p {
+  background-color: rgba(209, 122, 59, 0.5);
+}
+
+
 
 body>aside {
+
   width: 25%;
   float: left;
   margin: 0 1.5% 0 0;
 }
 
 body>article {
-  float: right;
   width: 60%;
   margin: 10px;
 }
@@ -124,7 +129,6 @@ body>article {
 /* Navigation Styles */
 
 nav {
-  float: right;
   display: table;
   width: 90%;
   font-family: 'Courier New', Courier, monospace;
