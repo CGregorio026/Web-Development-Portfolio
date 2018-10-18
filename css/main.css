@@ -104,31 +104,30 @@ textarea {
 } */
 
 html {
-  background-color: rgb(240, 240, 240);
+  background-color: hsla(194, 57%, 80%, 0.904);
 }
 
-
-p {
-  background-color: rgba(209, 122, 59, 0.5);
+body {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: hsla(194, 55%, 77%, 0.85)
 }
-
-
 
 body>aside {
-
   width: 25%;
   float: left;
-  margin: 0 1.5% 0 0;
 }
 
 body>article {
   width: 60%;
-  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Navigation Styles */
 
-nav {
+body>nav {
   display: table;
   width: 90%;
   font-family: 'Courier New', Courier, monospace;
@@ -142,18 +141,20 @@ nav>ul {
 nav>ul>li {
   display: table-cell;
   text-align: center;
+  width: 20%;
 }
+
 
 
 nav>ul>li>a:link,
 nav>ul>li>a:visited {
   text-decoration: none;
-  color: hsla(194, 22%, 48%, 0.85);
+  color: hsla(195, 29%, 27%, 0.85);
 }
 
 nav>ul>li>a:hover,
 nav>ul>li>a:active {
-  color: hsla(194, 50%, 32%, 0.9);
+  color: hsla(195, 63%, 13%, 0.9);
   text-decoration: underline;
 }
 
@@ -164,11 +165,39 @@ h1 {
 
 /* Footer Styles */
 
+footer {
+  clear: both;
+  text-align: center;
+  /* margin-left: auto;
+  margin-right: auto; */
+}
 
 
+/* Testing out styles-Stay as comments until used in the document */
 
 
+/* 
+This is a test style which enlarges a box of text and changes its color. The .sample was the text inside of the box, while the .box was a div element which has a black border, and has dimensions of 3x3ems. The transition changes the width and the height to the size stated in the .box:hover(when the element has the mouse hovered over it) over two seconds. It also changes the background-color over 2 seconds.
+*/
+/* .sample{
+  vertical-align:middle;
+}
+ 
+.box {
+    text-align:center;
+    border-style: solid;
+    border-width: 1px;
+    width: 3em;
+    height: 3em;
+    background-color: blue;
+    transition: width 2s, height 2s, background-color 2s;
+}
 
+.box:hover {
+    background-color: green;
+    width: 7em;
+    height: 7em;
+} */
 
 
 
