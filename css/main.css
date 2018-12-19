@@ -103,16 +103,30 @@ textarea {
   border: 1px solid red;
 } */
 
+/* 
+These styles put a font to the entire website, and set the background to a blue gradient that does not repeat itself.
+*/
 html {
   background: linear-gradient(to bottom, hsla(194, 57%, 80%, 0.904), hsla(194, 65%, 54%, 0.904)) no-repeat;
+  background: -webkit-linear-gradient(to bottom, hsla(194, 57%, 80%, 0.904), hsla(194, 65%, 54%, 0.904)) no-repeat;
   height: 100%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+/* 
+This makes the body in the middle of the page to have a contrast with the gradient, while having a different background than the website.
+*/
 
 body {
   width: 85%;
   margin-left: auto;
   margin-right: auto;
-  background-color: hsla(194, 55%, 77%, 0.85);
+  background: #005C97;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, rgba(54, 55, 149, 0.5), hsla(203, 100%, 30%, 0.5));
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, hsla(239, 47%, 40%, 0.5), hsla(203, 100%, 30%, 0.5));
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   height: 100%;
 }
 
@@ -129,6 +143,9 @@ article {
   background-color: hsla(194, 42%, 54%, 0.85);
 }
 
+/* 
+This creates a row with a background and a different color background than the background
+*/
 div.row {
   clear: both;
   width: 100%;
@@ -136,37 +153,55 @@ div.row {
   border: 1px solid black;
 }
 
+/* 
+Adds a grid with 4 columns that take up equal space with one another.
+*/
 div.col-1-4 {
   float: left;
   width: 25%;
   text-align: center;
 }
 
+/* 
+Container Collapse :^)
+*/
 div.row::after {
   clear: both;
   content: "";
   display: table;
 }
 
+/* 
+This prevents some articles from having borders or backgrounds.
+*/
 .noborder>article {
   border: none;
   background: transparent;
 }
 
-.pastWorks {
+div.row {
   border: 1px solid black;
+}
+
+/* Split the past works into a row with three units, each sharing the same amount of space */
+.pastWorks {
   list-style-type: none;
   display: block;
   float: left;
   width: 33%;
 }
 
+/* 
+Instead of letting the images pick their own space, they now take up the space of the units defined above.
+*/
 .pastWorks img {
   width: 100%;
   height: 100%;
 }
 
-
+/* 
+Centers the elements and text
+*/
 .description {
   padding-left: auto;
   padding-right: auto;
@@ -185,6 +220,9 @@ nav>ul {
   list-style-type: none;
 }
 
+/* 
+Splits the list items up due to there being 5 of them, each sharing up equal space
+*/
 nav ul li {
   display: block;
   text-align: center;
@@ -192,18 +230,27 @@ nav ul li {
   float: left;
 }
 
+/* 
+Links are defaultly the lighter blue colors until...
+*/
 nav>ul>li>a:link,
 nav>ul>li>a:visited {
   text-decoration: none;
   color: hsla(195, 29%, 27%, 0.85);
 }
 
+/* 
+... they are hovered over, making them dark blue and underlined. 
+*/
 nav>ul>li>a:hover,
 nav>ul>li>a:active {
   color: hsla(195, 63%, 13%, 0.9);
   text-decoration: underline;
 }
 
+/* 
+Makes this element display on it's own row.
+*/
 header h1 {
   clear: both;
 }
@@ -229,6 +276,11 @@ footer {
 
 * {
   box-sizing: border-box;
+}
+
+
+@media only screen and (max-width:700px) {
+  nav ul li {}
 }
 
 /* Testing out styles-Stay as comments until used in the document */
